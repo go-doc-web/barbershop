@@ -1,7 +1,311 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
+:root {
+  --first-title-color: #303030;
+  --second-title-color: #ffffff;
+  --first-btn-color: #303030;
+  --second-btn-color: #ffffff;
+  --accent-color: #ff6c00;
+  --primary-text-color: #555555;
+  --secondary-text-color: #303030;
+}
 
 body {
-	font-family: "Open Sans", sans-serif;
-	/* color: tomato; */
+  font-family: 'Open Sans', sans-serif;
+  /* color: tomato; */
+}
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--second-title-color);
+}
+
+/* HEADER */
+
+.header {
+  background-color: grey;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--second-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-link.current {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: var(--second-title-color);
+}
+
+.header-btn {
+  color: var(--second-title-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: rgb(79, 75, 75);
+}
+
+.hero-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--first-title-color);
+}
+
+.hero-social-link.current {
+  color: var(--accent-color);
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  /* font-weight: 700; */
+  /* Браузерный 700 поэтому можно не указывать  */
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+
+.hero-after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* About */
+
+.about {
+  background-color: rgb(190, 173, 173);
+}
+
+.about-pre-title {
+  color: var(--first-title-color);
+}
+
+.about-title {
+  color: var(--first-title-color);
+}
+
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.about-btn {
+  color: var(--first-btn-color);
+}
+
+/** Prices */
+
+.prices {
+  background-color: #302222;
+}
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--second-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  color: var(--second-btn-color);
+}
+
+/** Benefis */
+
+.benefis {
+}
+
+.benefis-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefis-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+
+  color: var(--accent-color);
+}
+.benefis-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: #303030;
+}
+.benefis-pre-title {
+  color: var(--secondary-text-color);
+}
+.benefis-title {
+  color: var(--first-title-color);
+}
+.benefis-after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/** Barbers */
+
+.barbers-pre-title {
+  color: #303030;
+}
+
+.barbers-title {
+  color: var(--first-title-color);
+}
+
+.barbers-item-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+.barbers-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/**Gallary */
+
+.gallary-pre-title {
+  color: var(--first-title-color);
+}
+
+/** Contacts */
+
+.contacts {
+  background-color: #191c26;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-title {
+  color: var(--second-title-color);
+}
+
+.contacts-address-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30/18;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.link-tel,
+.link-email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.link-email {
+  text-decoration: underline;
+}
