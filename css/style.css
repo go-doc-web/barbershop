@@ -10,9 +10,53 @@ font-family: 'Raleway', sans-serif; */
   --secondary-text-color: #303030;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   /* color: tomato; */
+}
+
+.section {
+  padding: 130px 0;
+  outline: 4px dashed blue;
+}
+
+.container {
+  width: 1200px;
+  /* width: 100%;
+  max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
 }
 
 .list {
@@ -71,6 +115,7 @@ body {
 
 .header {
   background-color: grey;
+  padding: 32px 0;
 }
 
 .header-link {
@@ -108,6 +153,10 @@ body {
   background-color: rgb(79, 75, 75);
 }
 
+.hero-content {
+  padding: 272px 180px 206px;
+}
+
 .hero-social-link {
   font-weight: 600;
   font-size: 11px;
@@ -127,6 +176,7 @@ body {
 
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -137,9 +187,11 @@ body {
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 
 .hero-after-title {
+  max-width: 364px;
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -150,14 +202,17 @@ body {
 
 .about {
   background-color: rgb(190, 173, 173);
+  padding: 130px 0;
 }
 
 .about-pre-title {
   color: var(--first-title-color);
+  margin-bottom: 20px;
 }
 
 .about-title {
   color: var(--first-title-color);
+  margin-bottom: 20px;
 }
 
 .about-after-title {
@@ -165,6 +220,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -172,6 +228,7 @@ body {
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 40px;
 }
 
 .about-btn {
@@ -186,10 +243,17 @@ body {
 
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
 .prices-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  padding: 30px 40px;
+  border: 1px solid #fff;
 }
 
 .prices-item-text {
@@ -198,13 +262,30 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
+.prices-item:nth-child(n + 2) {
+  margin-top: 30px;
+}
+
 .prices-btn {
   color: var(--second-btn-color);
+
+  display: block;
+  margin: 50px auto 0;
 }
 
 /** Benefis */
 
 .benefis {
+  padding-top: 121px;
+}
+
+.benefis-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+  padding: 20px 24px;
 }
 
 .benefis-item span {
@@ -232,9 +313,11 @@ body {
 }
 .benefis-pre-title {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 .benefis-title {
   color: var(--first-title-color);
+  margin-bottom: 20px;
 }
 .benefis-after-title {
   font-size: 18px;
@@ -304,8 +387,4 @@ body {
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
-}
-
-.link-email {
-  text-decoration: underline;
 }
